@@ -6,7 +6,7 @@
     You will output to element "typeInfo"
 
     1) Check to see if it's numeric. Display "It's a number!". Output 
-    the value with 1) no decimals, 2) 2 decimals, and 3) 4 decimals.
+    the value with 1) no decimals, 2) 2 decimals, and 3) 4 decimals. Use eval method
     2) Check to see it it's boolean. Output "It's a boolean!". Output
     value=yes if it's true and value=no if it's false.
     3) If it's an object, output "Wow, it's an object!"
@@ -22,6 +22,30 @@
     <style>
     body { font-size: 30px; }
     </style>
+    <script>
+        function checkType() {
+            var valueType = typeof eval(document.getElementById('valueToCheck').value;
+             //document.getElementById('typeinfo').innerHTML="The value is: " + valueType;
+            
+            var output = ""
+            if (valueType=="number") {
+             output = "Its is a number" + "<br>";
+             output += value.toFixed(0) + "<br>";                
+             output += value.toFixed(2) + "<br>";
+             output += value.toFixed(4) + "<br>";
+            }
+            
+            else if (valueType == "boolean") {
+                output = "It is a boolean";
+                if (value) {
+                    output += "value=yes if it's true";
+                }
+                else {
+                    output ="no it is false";
+                }
+                else if {
+                    output == "wow it is boolean";
+                }
     
 </head>
 <body>
